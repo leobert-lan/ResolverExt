@@ -495,8 +495,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://gitee.com/leobert_253/Resolver";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = exactVersion;
+				version = 1.4.5;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
