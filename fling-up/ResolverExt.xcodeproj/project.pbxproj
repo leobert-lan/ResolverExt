@@ -10,11 +10,7 @@
 		9A76DBD129E526DC0066FD3A /* ResolverExt.docc in Sources */ = {isa = PBXBuildFile; fileRef = 9A76DBD029E526DC0066FD3A /* ResolverExt.docc */; };
 		9A76DBD729E526DC0066FD3A /* ResolverExt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76DBCC29E526DC0066FD3A /* ResolverExt.framework */; };
 		9A76DBDC29E526DC0066FD3A /* ResolverExtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A76DBDB29E526DC0066FD3A /* ResolverExtTests.swift */; };
-		9A76DBDD29E526DC0066FD3A /* ResolverExt.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A76DBCF29E526DC0066FD3A /* ResolverExt.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A76DBE829E528450066FD3A /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 9A76DBE729E528450066FD3A /* Resolver */; };
-		9A76DBEB29E528A40066FD3A /* Providers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A76DBEA29E528A40066FD3A /* Providers.swift */; };
-		9A76DBED29E52AE10066FD3A /* AbsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A76DBEC29E52AE10066FD3A /* AbsModule.swift */; };
-		9A76DBEF29E530B40066FD3A /* DemoModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A76DBEE29E530B40066FD3A /* DemoModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +25,10 @@
 
 /* Begin PBXFileReference section */
 		9A76DBCC29E526DC0066FD3A /* ResolverExt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ResolverExt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A76DBCF29E526DC0066FD3A /* ResolverExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResolverExt.h; sourceTree = "<group>"; };
 		9A76DBD029E526DC0066FD3A /* ResolverExt.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ResolverExt.docc; sourceTree = "<group>"; };
 		9A76DBD629E526DC0066FD3A /* ResolverExtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResolverExtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A76DBDB29E526DC0066FD3A /* ResolverExtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolverExtTests.swift; sourceTree = "<group>"; };
-		9A76DBEA29E528A40066FD3A /* Providers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Providers.swift; sourceTree = "<group>"; };
-		9A76DBEC29E52AE10066FD3A /* AbsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsModule.swift; sourceTree = "<group>"; };
-		9A76DBEE29E530B40066FD3A /* DemoModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoModule.swift; sourceTree = "<group>"; };
+		9A76DC0529E54FA70066FD3A /* ResolverExt */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ResolverExt; path = dev/ResolverExt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +54,7 @@
 		9A76DBC229E526DC0066FD3A = {
 			isa = PBXGroup;
 			children = (
+				9A76DC0529E54FA70066FD3A /* ResolverExt */,
 				9A76DBCE29E526DC0066FD3A /* ResolverExt */,
 				9A76DBDA29E526DC0066FD3A /* ResolverExtTests */,
 				9A76DBCD29E526DC0066FD3A /* Products */,
@@ -79,8 +73,6 @@
 		9A76DBCE29E526DC0066FD3A /* ResolverExt */ = {
 			isa = PBXGroup;
 			children = (
-				9A76DBE929E5286B0066FD3A /* ext */,
-				9A76DBCF29E526DC0066FD3A /* ResolverExt.h */,
 				9A76DBD029E526DC0066FD3A /* ResolverExt.docc */,
 			);
 			path = ResolverExt;
@@ -90,18 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				9A76DBDB29E526DC0066FD3A /* ResolverExtTests.swift */,
-				9A76DBEE29E530B40066FD3A /* DemoModule.swift */,
 			);
 			path = ResolverExtTests;
-			sourceTree = "<group>";
-		};
-		9A76DBE929E5286B0066FD3A /* ext */ = {
-			isa = PBXGroup;
-			children = (
-				9A76DBEA29E528A40066FD3A /* Providers.swift */,
-				9A76DBEC29E52AE10066FD3A /* AbsModule.swift */,
-			);
-			path = ext;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,7 +93,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A76DBDD29E526DC0066FD3A /* ResolverExt.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A76DBEB29E528A40066FD3A /* Providers.swift in Sources */,
 				9A76DBD129E526DC0066FD3A /* ResolverExt.docc in Sources */,
-				9A76DBED29E52AE10066FD3A /* AbsModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +208,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A76DBEF29E530B40066FD3A /* DemoModule.swift in Sources */,
 				9A76DBDC29E526DC0066FD3A /* ResolverExtTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,7 +406,6 @@
 		9A76DBE429E526DC0066FD3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -444,7 +421,6 @@
 		9A76DBE529E526DC0066FD3A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
