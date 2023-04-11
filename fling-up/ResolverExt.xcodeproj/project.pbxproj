@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A5137B729E56A3000B47B4B /* ResolverExt.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A5137B329E56A3000B47B4B /* ResolverExt.h */; };
+		9A5137B829E56A3000B47B4B /* AbsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5137B529E56A3000B47B4B /* AbsModule.swift */; };
+		9A5137B929E56A3000B47B4B /* Providers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5137B629E56A3000B47B4B /* Providers.swift */; };
+		9A5137BC29E56A5A00B47B4B /* ResolverExtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5137BA29E56A5A00B47B4B /* ResolverExtTests.swift */; };
+		9A5137BD29E56A5A00B47B4B /* DemoModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5137BB29E56A5A00B47B4B /* DemoModule.swift */; };
 		9A76DBD129E526DC0066FD3A /* ResolverExt.docc in Sources */ = {isa = PBXBuildFile; fileRef = 9A76DBD029E526DC0066FD3A /* ResolverExt.docc */; };
 		9A76DBD729E526DC0066FD3A /* ResolverExt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A76DBCC29E526DC0066FD3A /* ResolverExt.framework */; };
-		9A76DBDC29E526DC0066FD3A /* ResolverExtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A76DBDB29E526DC0066FD3A /* ResolverExtTests.swift */; };
 		9A76DBE829E528450066FD3A /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 9A76DBE729E528450066FD3A /* Resolver */; };
 /* End PBXBuildFile section */
 
@@ -24,11 +28,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A5137B329E56A3000B47B4B /* ResolverExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResolverExt.h; path = ../../Sources/ResolverExt/ResolverExt.h; sourceTree = "<group>"; };
+		9A5137B529E56A3000B47B4B /* AbsModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbsModule.swift; sourceTree = "<group>"; };
+		9A5137B629E56A3000B47B4B /* Providers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Providers.swift; sourceTree = "<group>"; };
+		9A5137BA29E56A5A00B47B4B /* ResolverExtTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResolverExtTests.swift; path = ../../Tests/ResolverExtTests/ResolverExtTests.swift; sourceTree = "<group>"; };
+		9A5137BB29E56A5A00B47B4B /* DemoModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DemoModule.swift; path = ../../Tests/ResolverExtTests/DemoModule.swift; sourceTree = "<group>"; };
 		9A76DBCC29E526DC0066FD3A /* ResolverExt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ResolverExt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A76DBD029E526DC0066FD3A /* ResolverExt.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ResolverExt.docc; sourceTree = "<group>"; };
 		9A76DBD629E526DC0066FD3A /* ResolverExtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResolverExtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A76DBDB29E526DC0066FD3A /* ResolverExtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolverExtTests.swift; sourceTree = "<group>"; };
-		9A76DC0529E54FA70066FD3A /* ResolverExt */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ResolverExt; path = dev/ResolverExt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +58,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A5137B429E56A3000B47B4B /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				9A5137B529E56A3000B47B4B /* AbsModule.swift */,
+				9A5137B629E56A3000B47B4B /* Providers.swift */,
+			);
+			name = ext;
+			path = ../../Sources/ResolverExt/ext;
+			sourceTree = "<group>";
+		};
 		9A76DBC229E526DC0066FD3A = {
 			isa = PBXGroup;
 			children = (
-				9A76DC0529E54FA70066FD3A /* ResolverExt */,
 				9A76DBCE29E526DC0066FD3A /* ResolverExt */,
 				9A76DBDA29E526DC0066FD3A /* ResolverExtTests */,
 				9A76DBCD29E526DC0066FD3A /* Products */,
@@ -73,6 +89,8 @@
 		9A76DBCE29E526DC0066FD3A /* ResolverExt */ = {
 			isa = PBXGroup;
 			children = (
+				9A5137B429E56A3000B47B4B /* ext */,
+				9A5137B329E56A3000B47B4B /* ResolverExt.h */,
 				9A76DBD029E526DC0066FD3A /* ResolverExt.docc */,
 			);
 			path = ResolverExt;
@@ -81,7 +99,8 @@
 		9A76DBDA29E526DC0066FD3A /* ResolverExtTests */ = {
 			isa = PBXGroup;
 			children = (
-				9A76DBDB29E526DC0066FD3A /* ResolverExtTests.swift */,
+				9A5137BB29E56A5A00B47B4B /* DemoModule.swift */,
+				9A5137BA29E56A5A00B47B4B /* ResolverExtTests.swift */,
 			);
 			path = ResolverExtTests;
 			sourceTree = "<group>";
@@ -93,6 +112,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A5137B729E56A3000B47B4B /* ResolverExt.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +220,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A5137B829E56A3000B47B4B /* AbsModule.swift in Sources */,
 				9A76DBD129E526DC0066FD3A /* ResolverExt.docc in Sources */,
+				9A5137B929E56A3000B47B4B /* Providers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +230,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A76DBDC29E526DC0066FD3A /* ResolverExtTests.swift in Sources */,
+				9A5137BD29E56A5A00B47B4B /* DemoModule.swift in Sources */,
+				9A5137BC29E56A5A00B47B4B /* ResolverExtTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +429,7 @@
 		9A76DBE429E526DC0066FD3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -421,6 +445,7 @@
 		9A76DBE529E526DC0066FD3A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
